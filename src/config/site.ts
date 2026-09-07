@@ -11,7 +11,7 @@ export const site = {
   github: 'https://github.com/omkarsai24',
   linkedin: 'https://www.linkedin.com/in/omkarsai24',
   resume: '/resume.pdf',
-  siteUrl: import.meta.env.VITE_SITE_URL ?? 'https://omkarsai-portfolio.vercel.app',
+  siteUrl: import.meta.env.VITE_SITE_URL ?? 'https://omkar-portfolio-zeta-gilt.vercel.app',
 } as const;
 
 export const githubUsername: string =

@@ -1,0 +1,154 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\geometry{left=1.2cm, top=1.2cm, right=1.2cm, bottom=1.2cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% URL styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=NavyBlue,
+    filecolor=NavyBlue,
+    urlcolor=NavyBlue,
+}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, labelsep=0.08in, itemsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{RAVINUTHALA OMKAR SAI}} \\ \vspace{4pt}
+    Hyderabad, India \ $|$ \ 
+    \href{mailto:omkarsai.r@gmail.com}{\underline{omkarsai.r@gmail.com}} \ $|$ \ 
+    \href{tel:+919167681373}{+91 9167681373} \\ \vspace{3pt}
+    \textbf{Portfolio:} \href{https://omkarsai-portfolio.vercel.app}{\underline{omkarsai-portfolio.vercel.app}} \ $|$ \ 
+    \textbf{GitHub:} \href{https://github.com/omkarsai24}{\underline{github.com/omkarsai24}} \ $|$ \ 
+    \textbf{LinkedIn:} \href{https://linkedin.com/in/omkarsai24}{\underline{linkedin.com/in/omkarsai24}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+Computer Science Engineering and Data Science student pursuing a B.Tech in Computer Science Engineering and an Online BS in Data Science from IIT Madras. Strong foundation in Python, C++, Data Structures and Algorithms, Machine Learning, Computer Vision, SQL, and Software Development. Building projects across AI, data science, backend development, and developer collaboration systems. Interested in Artificial Intelligence, Machine Learning, Data Science, Computer Vision, Generative AI, and Software Engineering internships.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \resumeSubheading
+      {CR Rao Advanced Institute of Mathematics, Statistics and Computer Science (AIMSCS)}{Expected 2028}
+      {Bachelor of Technology (B.Tech) -- Computer Science Engineering}{Hyderabad, India}
+    \resumeSubheading
+      {Indian Institute of Technology Madras (IIT Madras)}{Expected 2028}
+      {Bachelor of Science (BS) -- Data Science, Online Degree}{Chennai, India}
+  \end{itemize}
+  \vspace{-6pt}
+  \small{\textbf{Relevant Coursework:} Data Structures and Algorithms, Artificial Intelligence, Statistics, Database Management Systems, Computer Vision, Software Engineering}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, labelsep=0.08in, itemsep=1.5pt, parsep=0pt]
+    \item \textbf{Programming:} Python, C, C++, SQL, JavaScript, HTML, CSS
+    \item \textbf{AI \& Data Science:} Machine Learning, Artificial Intelligence, Computer Vision, Data Analysis, Exploratory Data Analysis, Statistics
+    \item \textbf{Software \& Backend:} Node.js, Express.js, REST APIs, MySQL
+    \item \textbf{Frontend \& Desktop:} React, TypeScript, Electron, Tailwind CSS, Framer Motion, Monaco Editor
+    \item \textbf{Tools \& Platforms:} Git, GitHub, Linux, VS Code, Supabase
+    \item \textbf{Computer Science:} Data Structures and Algorithms, Database Management Systems, Database Normalization, Algorithm Design, Debugging
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \begin{itemize}[leftmargin=0in, label={}]
+
+    \resumeProjectHeading
+      {\textbf{Developer Collaboration \& Secure Project Handoff Platform (In Progress)} $|$ \href{https://github.com/omkarsai24/omkar-portfolio}{\underline{GitHub}}}{Electron, TypeScript, React, Monaco Editor, Supabase}
+      \resumeItemListStart
+        \item Designing a developer-focused desktop platform that enables real-time collaboration, project sharing, code review, and secure project handoffs between developers.
+        \item Building the desktop application architecture with Electron and TypeScript, with an integrated Monaco Editor for a VS Code-like coding experience.
+        \item Designing secure authentication with email verification, developer profiles, workspaces, project invitations, and permission-based access control.
+        \item Planning collaboration capabilities including shared development sessions, live code review, comments, project history, and controlled view/edit/review permissions.
+        \item Exploring AI-powered development assistance for future code suggestions, review support, and developer productivity features.
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AI-Powered Drone for Crowd Density Monitoring and Stampede Prevention}}{Python, OpenCV, Computer Vision}
+      \resumeItemListStart
+        \item Developing an AI-enabled drone surveillance system for crowd-density monitoring and early stampede-risk detection.
+        \item Using Python and OpenCV to process video streams and perform computer-vision-based crowd analysis.
+        \item Implementing image-analysis techniques for real-time safety monitoring and crowd-density estimation.
+        \item Collaborating with a 6-member team to integrate AI analytics with drone surveillance capabilities.
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Student Management System}}{Node.js, Express.js, MySQL, JavaScript}
+      \resumeItemListStart
+        \item Developed a full-stack CRUD application for student registration, search, update, and deletion.
+        \item Built REST APIs using Node.js and Express.js and connected backend services with a relational MySQL database.
+        \item Applied database normalization principles to improve data organization and maintainability.
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Data Analysis Using Python}}{Python, Statistics, Data Analysis}
+      \resumeItemListStart
+        \item Performed exploratory data analysis including data cleaning, statistical analysis, visualization, and trend identification.
+        \item Generated charts, summary statistics, and data-driven insights from analyzed datasets.
+      \resumeItemListEnd
+
+  \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \begin{itemize}[leftmargin=0.15in, labelsep=0.08in, itemsep=1.5pt, parsep=0pt]
+    \item Python Programming Certification \ $|$ \ Artificial Intelligence Fundamentals \ $|$ \ Data Science and Machine Learning Foundations
+    \item Git and GitHub Essentials \ $|$ \ SQL for Data Analysis
+  \end{itemize}
+
+%-----------ACHIEVEMENTS & INTERESTS-----------
+\section{Achievements \& Interests}
+  \begin{itemize}[leftmargin=0.15in, labelsep=0.08in, itemsep=1.5pt, parsep=0pt]
+    \item \textbf{Achievements:} Pursuing a dual-degree pathway in Computer Science Engineering and Data Science; consistently solving programming and algorithmic challenges.
+    \item \textbf{Languages:} English, Telugu, Hindi
+    \item \textbf{Interests:} Artificial Intelligence, Machine Learning, Data Science, Computer Vision, Generative AI
+  \end{itemize}
+
+\end{document}
